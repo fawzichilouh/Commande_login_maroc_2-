@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!--Bootstrap require-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="jQuery-Countdown/css/jquery.classycountdown.css"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!--Font import -->
+
+    <title>Eventsia</title>
+  </head>
+  <body class="template">
+    <nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <ul>
+              <li>GÜVENLİK</li>
+              <li>YARDIM</li>
+              <li>SIKÇA SORULAN SORULAR</li>
+              <li>ENGLISH</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="logo">
+              <img src="files/logo.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6 text-right d-none d-lg-block">
+            <div class="headerphone">
+              <div
+                class="d-flex"
+                style="align-items: center; justify-content: right"
+              >
+                <div class="position-relative text-center">
+                  <img src="files/heade_phone.svg" alt="" />
+                  <span class="number"
+                    >0850<br />
+                    220<br />
+                    00 00</span
+                  >
+                </div>
+                <div class="email text-center">
+                  <div class="name">
+                    Musteri iletisim<br />
+                    Merkezi
+                  </div>
+                  <hr class="h-divide" />
+                  <div class="my_email">www.ziraatbank.com.tr</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="my_main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="login text-center log_1 d-none">
+              <h5 class="title">İnternet Şubemize Hoş Geldiniz</h5>
+              <div class="choose">
+                <div class="c-left active">BİREYSEL</div>
+                <div class="c-right">KURUMSAL</div>
+              </div>
+              <div class="my_form">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="form-control"
+                    placeholder="T.C. Kirnlik / Magteri Numaraniz"
+                    aria-describedby="helpId"
+                  />
+                </div>
+                <div class="toggle_check_box text-right">
+                  <div class="form-group" style="font-size: 0.9em">
+                    Beni Hatırla
+                    <label class="switch ml-1">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="form-control"
+                    placeholder="Şifre"
+                    aria-describedby="helpId"
+                  />
+                </div>
+                <div class="toggle_check_box text-right">
+                  <div class="form-group">
+                    Mobil İmza İle Giriş <img src="files/question.png" alt="" />
+                    <label class="switch ml-1">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+                <button type="button" class="btn" id="submit1">DEVEM</button>
+                <div class="forget text-right">Şifremi Unuttum</div>
+              </div>
+              <hr class="divide" />
+              <div class="have_account">
+                <div class="a-title">
+                  Dijital Bankacılık müşterimiz olmak için
+                </div>
+                <div class="a-btn">
+                  <div class="btn">HEMEN BAŞVUR</div>
+                </div>
+              </div>
+            </div>
+            <div class="login text-center log_2">
+              <h4 class="title">İnternet Şubemize Hoş Geldiniz</h4>
+              <div class="notify my-4">
+                +90****** numeral! telefonunuza gonderilen sms sifresini
+              </div>
+              <div class="my_form">
+                <form action="">
+                  <div class="form-group mb-1">
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      class="form-control"
+                      placeholder="Sma Şifreniz"
+                      aria-describedby="helpId"
+                    />
+                  </div>
+                  <div id="countdown1"></div>
+
+                  <button type="button" class="btn" id="submit2">GIRLŞ</button>
+                </form>
+              </div>
+              <hr class="divide" />
+              <div class="have_account">
+                <div class="a-title">SMS almadiysaniz burayi tiklayin</div>
+                <div class="a-btn">
+                  <div class="btn">TEKRAR SMS GONDER</div>
+                </div>
+              </div>
+            </div>
+            <div class="login text-center log_3 d-none">
+              <h4 class="title">
+                SMS kodunuz yanlis, size yeni sms kodu gonderecegiz.
+              </h4>
+              <div class="my_form mt-5">
+                <form action="">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      class="form-control"
+                      placeholder="Sma Şifreniz"
+                      aria-describedby="helpId"
+                    />
+                  </div>
+                  <div class="counter">02:57</div>
+
+                  <button type="button" class="btn">GIRLŞ</button>
+                </form>
+              </div>
+              <hr class="divide" />
+              <div class="have_account">
+                <div class="a-title">SMS almadiysaniz burayi tiklayin</div>
+                <div class="a-btn">
+                  <div class="btn">TEKRAR SMS GONDER</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="part_right">
+              <div class="go_out">
+                <div class="img_go">
+                  <img src="files/go_out.png" alt="" />
+                  T.C. KİMLİK KARTI İLE GİRİŞ
+                </div>
+              </div>
+              <div class="mobile_part">
+                <div
+                  id="carouselExampleIndicators"
+                  class="carousel slide"
+                  data-ride="carousel"
+                >
+                  <ol class="carousel-indicators">
+                    <li
+                      data-target="#carouselExampleIndicators"
+                      data-slide-to="0"
+                      class="active"
+                    ></li>
+                    <li
+                      data-target="#carouselExampleIndicators"
+                      data-slide-to="1"
+                    ></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="img_mobile d-block" id="first">
+                            <img src="files/phone.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-md-9 pl-0">
+                          <div class="m-title">
+                            Mobil uygulamamiz ile Ziraat Bankasi hep yaninizda!
+                          </div>
+                          <button class="btn">HEMEN YÜKLE</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="img_mobile" id="second">
+                            <img src="files/phone_1.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-md-9 pl-0">
+                          <div class="m-title">
+                            Mobil uygulamamiz ile Ziraat Bankasi hep yaninizda!
+                          </div>
+                          <button class="btn">HEMEN YÜKLE</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="divider" />
+                <div class="info_sect">
+                  <div class="row">
+                    <div class="col-md-3 col-img text-center">
+                      <div class="icon_img">
+                        <img src="files/touch.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="col-md-9 info_text">
+                      Müşteri numaranızı, İnternet/Mobil bankacılık giriş ve ATM
+                      şifrenizi Ziraat Bankası personeli dahil kimse ile
+                      paylaşmayınız.
+                    </div>
+                  </div>
+                </div>
+                <div class="info_sect">
+                  <div class="row">
+                    <div class="col-md-3 col-img text-center">
+                      <div class="icon_img">
+                        <img src="files/close.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="col-md-9 info_text">
+                      Ziraat Bankası İnternet Şubesi´ne sadece
+                      www.ziraatbank.com.tr adresindeki "İnternet Şubesi"
+                      linkine tıklayarak ulaşınız
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="comodo_logo">
+                <img src="files/comodo-logo.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--Slick Js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="jQuery-Countdown/js/jquery.knob.js"></script>
+    <script src="jQuery-Countdown/js/jquery.throttle.js"></script>
+    <script src="jQuery-Countdown/js/jquery.classycountdown.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

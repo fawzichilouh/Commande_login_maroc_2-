@@ -1,0 +1,403 @@
+/* --------------------------
+:: Template Name: Eventsia : Page 
+:: Description: Page 
+:: Created: 03/01/2021  MM/DD/YYYY
+-------------------------- */
+
+/* ----------------------
+[Table of contents]
+01.Base CSS
+02.Template CSS
+
+ --------------------------*/
+
+/*  ----------- 01- Start Base CSS  ----------- */
+
+:root {
+  --main-black-color: #222;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  color: inherit !important;
+}
+a:hover {
+  text-decoration: none !important;
+}
+li {
+  padding: 0;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  @media (max-width: 992px) {
+    font-size: 14px;
+  }
+}
+#countdown1 {
+  margin: 44px auto !important;
+}
+.ClassyCountdown-wrapper {
+  > div {
+    display: none;
+  }
+}
+.ClassyCountdown-value {
+  margin-top: -15px !important;
+}
+.ClassyCountdown-seconds {
+  display: block !important;
+  margin: auto !important;
+  canvas {
+    width: 120px !important;
+    height: 110px !important;
+  }
+}
+.ClassyCountdown-wrapper .ClassyCountdown-value {
+  top: 68%;
+  left: 17px;
+}
+/*  ----------- 01 -End Base CSS   -----------*/
+/*  ----------- 02 -Start page CSS   -----------*/
+.template {
+  color: #fff;
+  .btn:hover {
+    background-color: #fff !important;
+    color: #394347 !important;
+  }
+  nav {
+    background-color: #e10514;
+    padding: 5px 0;
+    @media (max-width: 992px) {
+      display: none;
+    }
+    ul {
+      li {
+        display: inline-block;
+        font-size: 0.8em;
+        margin-right: 1vw;
+      }
+    }
+  }
+  header {
+    background-color: #fff;
+    padding: 15px 0;
+    @media (max-width: 992px) {
+      .logo {
+        text-align: center;
+      }
+    }
+    .row {
+      align-items: center;
+    }
+    .headerphone {
+      > div {
+        display: inline-block;
+        img {
+          height: 62px;
+          width: 55px;
+          margin-right: 5px;
+        }
+      }
+      .number {
+        position: absolute;
+        top: 20%;
+        left: 23%;
+        color: #222;
+        font-size: 0.6em;
+        line-height: 1;
+      }
+    }
+    .email {
+      color: #394347;
+      .name {
+        font-size: 0.8em;
+        font-weight: 500;
+      }
+      .h-divide {
+        background-color: #707070;
+        margin: 2px 0;
+        height: 1.2px;
+      }
+      .my_email {
+        color: #333333;
+        font-size: 0.6em;
+      }
+    }
+  }
+
+  .my_main {
+    background: url("../files/background.png") no-repeat;
+    background-size: cover;
+    @media (max-width: 992px) {
+      background: #dd394c;
+    }
+    .login {
+      padding: 45px 0;
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
+    .counter {
+      width: 130px;
+      height: 110px;
+      border-radius: 50%;
+      font-size: 1.1em;
+      margin: 40px auto;
+      border: 1.5px solid #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+    }
+    .choose {
+      margin: 16px 0;
+      > div {
+        display: inline-block;
+        padding: 1vh 2vw;
+        color: #ddd;
+        font-weight: 600;
+        opacity: 0.8;
+      }
+      .active {
+        color: #fff;
+        opacity: 1;
+      }
+      .c-left {
+        border-right: 1px solid #eee;
+      }
+    }
+    .my_form {
+      .form-group {
+        margin-bottom: 10px;
+      }
+      .btn {
+        background-color: #394347;
+        color: #fff;
+        width: 100%;
+        display: block;
+        border-radius: 28px;
+        padding: 10px 0;
+        font-size: 0.75em;
+        font-weight: 600;
+      }
+      .form-control {
+        border-radius: 28px;
+        padding: 20px 16px;
+      }
+      .form-control:focus {
+        box-shadow: 0px 0px 1px 1px #00acba;
+        border: 1px solid #00acba;
+      }
+      .form-control::placeholder {
+        font-size: 0.8em;
+        color: #4450569d;
+        font-weight: 600;
+      }
+
+      .forget {
+        text-decoration: underline;
+        margin: 2vh 0;
+      }
+    }
+    .divide {
+      background-color: #fff;
+      height: 0.5px;
+      opacity: 0.4;
+    }
+    .have_account {
+      .a-title {
+        margin: 20px 0 25px;
+      }
+      .a-btn {
+        .btn {
+          border: 1px solid #fff;
+          display: block;
+          width: 100%;
+          color: #fff;
+          border-radius: 28px;
+          padding: 10px 0;
+          margin: 3vh 0;
+          font-size: 0.75em;
+          font-weight: 600;
+        }
+      }
+    }
+    .part_right {
+      padding: 65px 0;
+      width: 80%;
+      margin: auto;
+      @media (max-width: 992px) {
+        text-align: center;
+        width: 100%;
+      }
+
+      .go_out {
+        background-color: #fff;
+        padding: 10px 2vw;
+        color: #00acba;
+        border-radius: 12px;
+        cursor: pointer;
+        .img_go {
+          img {
+            margin-right: 5px;
+            margin-top: -2px;
+          }
+        }
+      }
+      .mobile_part {
+        margin: 35px 0 30px;
+        background-color: rgba(255, 255, 255, 0.774);
+        color: #333333;
+        padding: 30px 22px;
+        border-radius: 16px;
+        .carousel-indicators {
+          bottom: -25px;
+          li {
+            width: 25px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.883);
+            opacity: 0.9;
+            border: 0;
+          }
+          li.active {
+            background-color: #e10514;
+          }
+        }
+        .img_mobile {
+          img {
+            width: 52px;
+            @media (max-width: 992px) {
+              width: 40px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+        .col-img {
+          padding-right: 0;
+          @media (max-width: 992px) {
+            margin-bottom: 10px;
+          }
+        }
+        .m-title {
+          font-size: 1.1em;
+        }
+        .btn {
+          border-radius: 20px;
+          padding: 8px 26px;
+          border: 1px solid #445056;
+          margin: 20px 0 10px;
+          color: #445056;
+          font-size: 0.75em;
+          font-weight: 600;
+        }
+        .switch_page {
+          text-align: center;
+          @media (max-width: 992px) {
+            margin: 10px 0;
+          }
+          .active {
+            background-color: #e10514;
+          }
+          li {
+            display: inline-block;
+            width: 25px;
+            height: 3px;
+            border-radius: 8px;
+            background-color: #fff;
+            cursor: pointer;
+          }
+        }
+        .divider {
+          background-color: #00acba;
+          opacity: 0.7;
+        }
+        .info_sect {
+          padding: 2vh 0;
+          .info_text {
+            color: #445056;
+            font-size: 0.85em;
+          }
+        }
+      }
+      .comodo_logo {
+        text-align: right;
+        @media (max-width: 992px) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  /* toogle checkbox */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 68px;
+    height: 25px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 4px;
+    right: 0;
+    bottom: 0;
+    background-color: #960919;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 1px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider {
+    background-color: #80da61;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #960919;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(39px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+    border: 1px solid #fff;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+}
+/*  ----------- 02 -End page CSS   -----------*/

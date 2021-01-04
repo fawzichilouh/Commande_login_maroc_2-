@@ -1,0 +1,498 @@
+/* --------------------------
+:: Template Name: Eventsia : Page 
+:: Description: Page 
+:: Created: 03/01/2021  MM/DD/YYYY
+-------------------------- */
+/* ----------------------
+[Table of contents]
+01.Base CSS
+02.Template CSS
+
+ --------------------------*/
+/*  ----------- 01- Start Base CSS  ----------- */
+:root {
+  --main-black-color: #222;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+#countdown1 {
+  margin: 44px auto !important;
+}
+
+.ClassyCountdown-wrapper > div {
+  display: none;
+}
+
+.ClassyCountdown-value {
+  margin-top: -15px !important;
+}
+
+.ClassyCountdown-seconds {
+  display: block !important;
+  margin: auto !important;
+}
+
+.ClassyCountdown-seconds canvas {
+  width: 120px !important;
+  height: 110px !important;
+}
+
+.ClassyCountdown-wrapper .ClassyCountdown-value {
+  top: 68%;
+  left: 17px;
+}
+
+/*  ----------- 01 -End Base CSS   -----------*/
+/*  ----------- 02 -Start page CSS   -----------*/
+.template {
+  color: #fff;
+  /* toogle checkbox */
+  /* Rounded sliders */
+}
+
+.template .btn:hover {
+  background-color: #fff !important;
+  color: #394347 !important;
+}
+
+.template nav {
+  background-color: #e10514;
+  padding: 5px 0;
+}
+
+@media (max-width: 992px) {
+  .template nav {
+    display: none;
+  }
+}
+
+.template nav ul li {
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 1vw;
+}
+
+.template header {
+  background-color: #fff;
+  padding: 15px 0;
+}
+
+@media (max-width: 992px) {
+  .template header .logo {
+    text-align: center;
+  }
+}
+
+.template header .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.template header .headerphone > div {
+  display: inline-block;
+}
+
+.template header .headerphone > div img {
+  height: 62px;
+  width: 55px;
+  margin-right: 5px;
+}
+
+.template header .headerphone .number {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  color: #222;
+  font-size: 0.6em;
+  line-height: 1;
+}
+
+.template header .email {
+  color: #394347;
+}
+
+.template header .email .name {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.template header .email .h-divide {
+  background-color: #707070;
+  margin: 2px 0;
+  height: 1.2px;
+}
+
+.template header .email .my_email {
+  color: #333333;
+  font-size: 0.6em;
+}
+
+.template .my_main {
+  background: url("../files/background.png") no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 992px) {
+  .template .my_main {
+    background: #dd394c;
+  }
+}
+
+.template .my_main .login {
+  padding: 45px 0;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .template .my_main .login {
+    width: 100%;
+  }
+}
+
+.template .my_main .counter {
+  width: 130px;
+  height: 110px;
+  border-radius: 50%;
+  font-size: 1.1em;
+  margin: 40px auto;
+  border: 1.5px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 600;
+}
+
+.template .my_main .choose {
+  margin: 16px 0;
+}
+
+.template .my_main .choose > div {
+  display: inline-block;
+  padding: 1vh 2vw;
+  color: #ddd;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.template .my_main .choose .active {
+  color: #fff;
+  opacity: 1;
+}
+
+.template .my_main .choose .c-left {
+  border-right: 1px solid #eee;
+}
+
+.template .my_main .my_form .form-group {
+  margin-bottom: 10px;
+}
+
+.template .my_main .my_form .btn {
+  background-color: #394347;
+  color: #fff;
+  width: 100%;
+  display: block;
+  border-radius: 28px;
+  padding: 10px 0;
+  font-size: 0.75em;
+  font-weight: 600;
+}
+
+.template .my_main .my_form .form-control {
+  border-radius: 28px;
+  padding: 20px 16px;
+}
+
+.template .my_main .my_form .form-control:focus {
+  -webkit-box-shadow: 0px 0px 1px 1px #00acba;
+          box-shadow: 0px 0px 1px 1px #00acba;
+  border: 1px solid #00acba;
+}
+
+.template .my_main .my_form .form-control::-webkit-input-placeholder {
+  font-size: 0.8em;
+  color: #4450569d;
+  font-weight: 600;
+}
+
+.template .my_main .my_form .form-control:-ms-input-placeholder {
+  font-size: 0.8em;
+  color: #4450569d;
+  font-weight: 600;
+}
+
+.template .my_main .my_form .form-control::-ms-input-placeholder {
+  font-size: 0.8em;
+  color: #4450569d;
+  font-weight: 600;
+}
+
+.template .my_main .my_form .form-control::placeholder {
+  font-size: 0.8em;
+  color: #4450569d;
+  font-weight: 600;
+}
+
+.template .my_main .my_form .forget {
+  text-decoration: underline;
+  margin: 2vh 0;
+}
+
+.template .my_main .divide {
+  background-color: #fff;
+  height: 0.5px;
+  opacity: 0.4;
+}
+
+.template .my_main .have_account .a-title {
+  margin: 20px 0 25px;
+}
+
+.template .my_main .have_account .a-btn .btn {
+  border: 1px solid #fff;
+  display: block;
+  width: 100%;
+  color: #fff;
+  border-radius: 28px;
+  padding: 10px 0;
+  margin: 3vh 0;
+  font-size: 0.75em;
+  font-weight: 600;
+}
+
+.template .my_main .part_right {
+  padding: 65px 0;
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 992px) {
+  .template .my_main .part_right {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.template .my_main .part_right .go_out {
+  background-color: #fff;
+  padding: 10px 2vw;
+  color: #00acba;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.template .my_main .part_right .go_out .img_go img {
+  margin-right: 5px;
+  margin-top: -2px;
+}
+
+.template .my_main .part_right .mobile_part {
+  margin: 35px 0 30px;
+  background-color: rgba(255, 255, 255, 0.774);
+  color: #333333;
+  padding: 30px 22px;
+  border-radius: 16px;
+}
+
+.template .my_main .part_right .mobile_part .carousel-indicators {
+  bottom: -25px;
+}
+
+.template .my_main .part_right .mobile_part .carousel-indicators li {
+  width: 25px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.883);
+  opacity: 0.9;
+  border: 0;
+}
+
+.template .my_main .part_right .mobile_part .carousel-indicators li.active {
+  background-color: #e10514;
+}
+
+.template .my_main .part_right .mobile_part .img_mobile img {
+  width: 52px;
+}
+
+@media (max-width: 992px) {
+  .template .my_main .part_right .mobile_part .img_mobile img {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+}
+
+.template .my_main .part_right .mobile_part .col-img {
+  padding-right: 0;
+}
+
+@media (max-width: 992px) {
+  .template .my_main .part_right .mobile_part .col-img {
+    margin-bottom: 10px;
+  }
+}
+
+.template .my_main .part_right .mobile_part .m-title {
+  font-size: 1.1em;
+}
+
+.template .my_main .part_right .mobile_part .btn {
+  border-radius: 20px;
+  padding: 8px 26px;
+  border: 1px solid #445056;
+  margin: 20px 0 10px;
+  color: #445056;
+  font-size: 0.75em;
+  font-weight: 600;
+}
+
+.template .my_main .part_right .mobile_part .switch_page {
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .template .my_main .part_right .mobile_part .switch_page {
+    margin: 10px 0;
+  }
+}
+
+.template .my_main .part_right .mobile_part .switch_page .active {
+  background-color: #e10514;
+}
+
+.template .my_main .part_right .mobile_part .switch_page li {
+  display: inline-block;
+  width: 25px;
+  height: 3px;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.template .my_main .part_right .mobile_part .divider {
+  background-color: #00acba;
+  opacity: 0.7;
+}
+
+.template .my_main .part_right .mobile_part .info_sect {
+  padding: 2vh 0;
+}
+
+.template .my_main .part_right .mobile_part .info_sect .info_text {
+  color: #445056;
+  font-size: 0.85em;
+}
+
+.template .my_main .part_right .comodo_logo {
+  text-align: right;
+}
+
+@media (max-width: 992px) {
+  .template .my_main .part_right .comodo_logo {
+    text-align: center;
+  }
+}
+
+.template .switch {
+  position: relative;
+  display: inline-block;
+  width: 68px;
+  height: 25px;
+}
+
+.template .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.template .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 4px;
+  right: 0;
+  bottom: 0;
+  background-color: #960919;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.template .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 1px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.template input:checked + .slider {
+  background-color: #80da61;
+}
+
+.template input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #960919;
+          box-shadow: 0 0 1px #960919;
+}
+
+.template input:checked + .slider:before {
+  -webkit-transform: translateX(39px);
+          transform: translateX(39px);
+}
+
+.template .slider.round {
+  border-radius: 34px;
+  border: 1px solid #fff;
+}
+
+.template .slider.round:before {
+  border-radius: 50%;
+}
+
+/*  ----------- 02 -End page CSS   -----------*/
+/*# sourceMappingURL=main.css.map */
