@@ -49,7 +49,9 @@ body {
 }
 
 #countdown1 {
-  margin: 44px auto !important;
+  margin: 45px auto 50px !important;
+  position: relative;
+  left: -10px;
 }
 
 .ClassyCountdown-wrapper > div {
@@ -73,6 +75,14 @@ body {
 .ClassyCountdown-wrapper .ClassyCountdown-value {
   top: 68%;
   left: 17px;
+}
+
+@media (max-width: 992px) {
+  .ClassyCountdown-wrapper .ClassyCountdown-value {
+    top: 36%;
+    left: 3px;
+    font-size: 22px !important;
+  }
 }
 
 /*  ----------- 01 -End Base CSS   -----------*/
@@ -107,7 +117,8 @@ body {
 
 .template header {
   background-color: #fff;
-  padding: 15px 0;
+  padding: 18px 0;
+  position: relative;
 }
 
 @media (max-width: 992px) {
@@ -120,6 +131,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.template header .headerphone {
+  position: absolute;
+  right: 3vw;
+  top: -29px;
 }
 
 .template header .headerphone > div {
