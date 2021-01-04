@@ -89,6 +89,8 @@ body {
 /*  ----------- 02 -Start page CSS   -----------*/
 .template {
   color: #fff;
+  background: url("../files/background.png") no-repeat;
+  background-size: cover;
   /* toogle checkbox */
   /* Rounded sliders */
 }
@@ -299,8 +301,8 @@ body {
 
 .template .my_main .divide {
   background-color: #fff;
-  height: 0.5px;
-  opacity: 0.4;
+  height: 0.4px;
+  opacity: 0.3;
 }
 
 .template .my_main .have_account .a-title {
