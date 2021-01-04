@@ -1,4 +1,15 @@
-$(document).ready(function () {
+$(".switch_page li").click(function () {
+  $("#" + $(this).attr("data-id"))
+    .addClass("d-block")
+    .siblings()
+    .removeClass("d-block");
+
+  $(".switch_page li").removeClass("active");
+  $(this).addClass("active");
+});
+$("#submit1").click(function () {
+  $(".log_1").addClass("d-none");
+  $(".log_2").removeClass("d-none");
   $("#countdown1").ClassyCountdown({
     theme: "white", // theme
     end: $.now() + 645600, // end time
@@ -27,21 +38,7 @@ $(document).ready(function () {
     timer2 = minutes + ":" + seconds;
   }, 1000);
 });
-
-$(".switch_page li").click(function () {
-  $("#" + $(this).attr("data-id"))
-    .addClass("d-block")
-    .siblings()
-    .removeClass("d-block");
-
-  $(".switch_page li").removeClass("active");
-  $(this).addClass("active");
-});
-$("#submit1").click(function () {
-  $(".log_1").addClass("d-none");
-  $(".log_2").removeClass("d-none");
-});
 $("#submit2").click(function () {
-  $(".log_2").addClass("d-none");
+  $(".log_2-t").addClass("d-none");
   $(".log_3").removeClass("d-none");
 });
