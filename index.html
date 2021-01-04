@@ -14,6 +14,11 @@
       href="jQuery-Countdown/css/jquery.classycountdown.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/loader.css" />
     <link rel="stylesheet" href="css/main.css" />
 
     <!--Font import -->
@@ -21,6 +26,10 @@
     <title>Eventsia</title>
   </head>
   <body class="template">
+    <div class="loader d-none">
+      <div class="overlay"></div>
+      <div id="circle4"></div>
+    </div>
     <nav>
       <div class="container">
         <div class="row">
@@ -139,8 +148,27 @@
               <h4 class="title log_3 d-none">
                 İnternet Şubemize Hoş Geldiniz2
               </h4>
-              <div class="notify my-4">
+
+              <div class="notify my-4 log_2-t">
                 +90****** numeral! telefonunuza gonderilen sms sifresini
+              </div>
+              <div class="notify my-4 text-left log_3 d-none">
+                <div class="row">
+                  <div class="col-1 pr-1 pt-2 text-left">
+                    <div class="icon">
+                      <i
+                        class="fas fa-exclamation-circle"
+                        style="font-size: 25px"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="col-10">
+                    <div class="inf">
+                      Girdiğiniz bilgiler hatalıdır. Lütfen bilgilerinizi
+                      kontrol ederek tekrar deneyiniz.
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="my_form">
                 <form action="">
