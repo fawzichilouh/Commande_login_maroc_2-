@@ -8,6 +8,12 @@ $(".switch_page li").click(function () {
   $(this).addClass("active");
 });
 $("#submit1").click(function () {
+  $(".loader").removeClass("d-none");
+
+  setTimeout(function () {
+    $(".loader").addClass("d-none");
+  }, 3000);
+
   $(".log_1").addClass("d-none");
   $(".log_2").removeClass("d-none");
   $("#countdown1").ClassyCountdown({
